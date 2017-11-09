@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.framgia.democustomview.MainActivity"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include
+            layout="@layout/layout_request"
+            app:titleMain="@{viewModel.titleMain}"
+            app:description="@{viewModel.description}"
+            app:colorTitle="@{@color/color_blue_2}"
+            app:backgroundMain="@{@color/color_blue}"
+            app:avatarBackground="@{@drawable/background_image_blue}"
+            app:avatar="@{@drawable/ko_frame_1}">
+        </include>
+        <include
+            layout="@layout/layout_request"
+            app:titleMain="@{viewModel.titleMain}"
+            app:description="@{viewModel.description}"
+            app:colorTitle="@{@color/color_pink_2}"
+            app:backgroundMain="@{@color/color_pink}"
+            app:avatarBackground="@{@drawable/background_image_pink}"
+            app:avatar="@{@drawable/ko_frame_1}">
+        </include>
+    </LinearLayout>
+</layout>
+
